@@ -1,0 +1,59 @@
+/* welcome*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2 {
+    font-family: $font-montserrat;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: $font-montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    color:$color-h3-sections;
+}
+
+button {
+    background: transparent;
+    padding: 0;
+    border: 0;    
+    cursor: pointer;
+}
+
+.welcome-content {
+    padding: 165px 0 230px;
+    text-align: center;
+    color: $color-text-section;
+
+    &__text {
+    font-family: $font-kaushan;
+    font-size: 72px;
+    margin-bottom: 60px;
+}
+
+    &__title {
+    @include font--famili-weight ('all');
+    font-size: 60px;
+    line-height: 180px;
+    text-transform: uppercase;
+    margin-bottom: 125px;
+}
+
+    &__button {
+    @include font--famili-weight ('all');
+    font-size: 15px;
+    color:$color-wight;
+    text-transform: uppercase;
+    border: 3px solid $color-wight;
+    padding: 12px 30px;
+    transition: all.2s linear;
+
+    &:hover {
+    box-shadow: $color-coral  3px 3px 15px;
+}
+}
+}
+/* /welcome */

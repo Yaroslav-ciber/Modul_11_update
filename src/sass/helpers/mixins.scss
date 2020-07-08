@@ -1,0 +1,32 @@
+
+@mixin dubl ($font, $weight, $size, $color ) {
+    font-family: $font;
+    font-weight: $weight;
+    font-size: $size;
+    color:$color;  
+}
+@mixin BTN ($bg, $bd, $pd, $cursor: pointer) {
+    background: $bg;
+    border: $bd;
+    padding: $pd;
+    cursor: $cursor;    
+}
+
+@mixin center-flex($type: 'all') {
+    display: flex;
+
+    @if $type== 'all' {
+        justify-content: center;
+        align-items: center;
+    }@else if $type== 'hor' {
+        justify-content: center;
+    }@else if $type== 'ver' {
+        align-items: center;
+    }
+}
+
+@mixin font--famili-weight ($type: 'all') {
+    font-family: $font-montserrat;
+    font-weight: 800;    
+}
+

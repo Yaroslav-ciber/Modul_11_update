@@ -1,0 +1,21 @@
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .background {
+        background-image: url(/images/background@2x.jpg);
+        background-position: center;
+        background-size: cover;
+      }  
+
+      .header{
+        // display: block;
+        // float: none;
+        height: 100%;
+        position: relative;
+    }
+
+    .nav__list {
+      float: none;
+      width: auto;
+
+    }
+  }
+

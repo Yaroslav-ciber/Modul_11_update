@@ -1,0 +1,111 @@
+/* Who_we_are */
+.meet {
+    padding-top: 95px;
+    margin-bottom: 85px;
+    &__description {
+    max-width: 980px;
+    margin: 0 auto 95px;
+    text-align: center;
+    line-height: 24px;
+    color:$amazing-service-text;
+}
+}
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    &__item {
+    flex-basis: 380px;
+    list-style: none;
+    position: relative;
+    transition: all.2s linear;
+}
+    &__photo {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    font-size: 0;
+    margin-bottom: 30px;
+    &::before {
+    @extend %procent;
+    @extend %marg;
+    content: '';
+    position: absolute;
+    background: var(--main-color);
+    z-index: -1;
+}
+&::after {
+    @extend %procent;
+    @extend %marg;
+    content: '';
+    position: absolute;
+    background: linear-gradient(0deg, rgba(252,227,138,1) 0%, rgba(243,129,129,0.896796218487395) 100%);
+    opacity: 0;
+    transition: all.2s linear;
+}
+}
+    &___img {
+    transition: all.2s linear; 
+}
+    &__item:hover   &___img {
+    transform: translate(-10px, -10px);
+}
+    &__item:hover   &__photo::after {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+}
+}
+.social-list {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    &__item {
+    list-style: none;
+}
+    &__link {
+    width: 56px;
+    height: 56px;
+    background-color: $color-yallow;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color .2s linear, opacity .2s linear;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    &__item:not(:last-child)    &__link {
+    border-right: 1px solid var(--main-hover-color);
+}
+    &__svg {
+    fill: var(--main-hover-color);
+}
+    &__link:hover {
+    background-color: var(--main-hover-color);
+}
+    &__link:hover   &__svg {
+    fill: #fff;
+}
+.team-list__item:hover  &__link {
+opacity: 1;
+}
+}
+
+.team-content {
+    text-align: center;
+    margin-bottom: 25px;
+    &__title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+    &__text {
+    font-family: $font-roboto;
+    font-weight: 300;
+    font-style: $font-style;
+    color: $amazing-service-text;
+}
+}
+/* /Who_we_are */

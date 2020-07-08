@@ -1,0 +1,45 @@
+@media screen and (max-width: 850px) {
+    .background{
+        background: url(/images/background@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+      padding: 0 15px;
+      max-height: auto;
+      background-size: cover;
+      
+    }
+    .header__top {
+        @include center-flex('ver');
+        flex-wrap: wrap;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .nav__list{
+      margin-left: 20px;
+    }
+
+    .nav__list-link {
+        font-size: 14px;
+        padding-top: 10px;
+        justify-content: center;
+    }
+
+    .nav__list-svg {
+        width: 10px;
+        height: 10px;
+        fill: $color-wight;
+        transition: all.2s linear;
+
+    }
+    h1 {
+      font-size: 50px;
+    }
+    .team-list{
+      justify-content: center;
+
+    }
+  }
+

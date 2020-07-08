@@ -1,0 +1,17 @@
+
+@import './helpers/varieble.scss';
+@import './helpers/mixins.scss';
+@import './helpers/normalize.scss';
+@import 'base.scss';
+// 
+@import './components/header.scss';
+@import './components/section.scss';
+@import './components/section_1.scss';
+@import './components/section_2.scss';
+@import './components/footer.scss';
+// 
+@import './helpers/retina.scss';
+@import 'helpers/adaptyv';
+@import './helpers/placeholders.scss';
+
+@import './helpers/mobile.scss';
