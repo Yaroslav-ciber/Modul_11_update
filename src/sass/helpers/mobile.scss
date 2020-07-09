@@ -1,6 +1,5 @@
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
     .background{
-        background: url(/images/background@2x.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -16,6 +15,11 @@
         flex-wrap: wrap;
         padding-top: 10px;
         justify-content: center;
+        margin-right: 40px;
+    }
+    .header__logo{
+      padding-top: 6px;
+      padding-bottom: 20px;
     }
     .nav__list{
       margin-left: 20px;
