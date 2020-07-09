@@ -8,7 +8,7 @@
     padding-top: 30px;
     justify-content: space-between;
     padding: 25px;
-}
+    }
 
 .header__logo-type {
     font-family: $font-montserrat;
@@ -24,6 +24,8 @@
 }
 .nav__list-item {
     list-style: none;
+    padding-top: 10px;
+    padding-bottom: 7px;
 }
 .nav__list-item:not(:last-child) {
     margin-right: 58px;
